@@ -1,59 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <mark style="background-color: rgb(11, 39, 109);">Contact us</mark>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-nav ul li {
-    margin: 0 15px;
-}
+            <label for="reason">Reason for Contact:</label>
+            <input list="reasons" id="reason" name="reason">
+            <datalist id="reasons">
+                <option value="Support">
+                <option value="Sales">
+                <option value="Feedback">
+                <option value="Other">
+            </datalist><br><br>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
-nav ul li a:hover {
-    background-color: #555;
-}
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html>
 
-nav ul li a.active {
-    background-color: #555;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
 
